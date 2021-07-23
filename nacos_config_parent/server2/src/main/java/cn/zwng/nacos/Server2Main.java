@@ -25,4 +25,8 @@ public class Server2Main {
     public String server(){
         return config;
     }
+
+    /**
+     * test idea git
+     */
 }
