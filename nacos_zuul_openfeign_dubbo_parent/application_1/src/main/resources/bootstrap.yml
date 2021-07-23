@@ -1,0 +1,21 @@
+server:
+  port: ${port:5000}
+  servlet:
+    context-path: /app1
+spring:
+  application:
+    name: app1
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 2cbac16d-8042-4d95-93a7-e03e49f21913
+        cluster-name: app-cluster
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        namespace: 2cbac16d-8042-4d95-93a7-e03e49f21913
+        group: ZWNG_GROUP
+

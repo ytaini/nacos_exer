@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: server2
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 127.0.0.1:8848,127.0.0.1:8849,127.0.0.1:8850
+        namespace: 2fca634a-cc5b-4d22-874e-e37984cbfd8d #dev
+        group: STUDENT_GROUP

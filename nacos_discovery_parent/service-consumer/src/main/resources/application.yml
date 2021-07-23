@@ -1,0 +1,15 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: service-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 2cbac16d-8042-4d95-93a7-e03e49f21913
+#        group: TEST_GROUP 没用
+#        cluster-name: zwng
+logging:
+  level:
+    cn.zwng.nacos.discovery.openfeignconfig: debug
